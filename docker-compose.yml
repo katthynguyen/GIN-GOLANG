@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  comment:
+    build: .
+    container_name: cms-comment
+    image: cms-comment
+    ports:
+      - 8888:8888
+    command: go run main.go
